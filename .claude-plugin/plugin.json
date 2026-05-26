@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "scribo-mcp",
+  "version": "1.0.0",
+  "description": "EN 16931-compliant e-invoicing (XRechnung, ZUGFeRD, Factur-X, Peppol BIS UBL, Spanish Facturae, plain US PDF) as MCP tools. Talks to the hosted Scribo MCP server at scribo.causaprima.ai/mcp; the sender's email is the login.",
+  "author": {
+    "name": "Causa Prima",
+    "url": "https://causaprima.ai"
+  },
+  "homepage": "https://scribo.causaprima.ai",
+  "repository": "https://github.com/causa-prima-ai/scribo-mcp",
+  "license": "MIT",
+  "keywords": ["invoice", "e-invoicing", "en16931", "xrechnung", "zugferd", "scribo", "mcp"],
+  "mcpServers": {
+    "scribo": {
+      "type": "http",
+      "url": "https://scribo.causaprima.ai/mcp"
+    }
+  }
+}
