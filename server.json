@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "websiteUrl": "https://scribo.causaprima.ai",
   "repository": {
-    "url": "https://github.com/CausaPrimaAI/scribo-mcp",
+    "url": "https://github.com/causa-prima-ai/scribo-mcp",
     "source": "github"
   },
   "remotes": [

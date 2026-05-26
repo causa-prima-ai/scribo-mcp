@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Scribo">
+  <title>Scribo</title>
+  <defs>
+    <linearGradient id="scriboBrand" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#11192D"/>
+      <stop offset="1" stop-color="#3F8466"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" ry="56" fill="url(#scriboBrand)"/>
+  <text
+    x="128"
+    y="128"
+    text-anchor="middle"
+    dy="0.36em"
+    fill="#FFFFFF"
+    font-family="-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="700"
+    font-size="184"
+  >S</text>
+</svg>
