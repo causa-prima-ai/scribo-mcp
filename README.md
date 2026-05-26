@@ -32,7 +32,7 @@ hosted URL and you're done.
 /plugin install scribo-mcp
 ```
 
-The repo ships as a single-plugin Claude Code marketplace, so no separate marketplace setup is needed. The plugin wires up the hosted MCP server at `scribo.causaprima.ai/mcp` — no manual `.mcp.json` editing.
+The `/plugin marketplace add` line points Claude Code at this repo, which ships its plugin manifest directly — no companion marketplace repo to maintain. The plugin then wires up the hosted MCP server at <https://scribo.causaprima.ai/mcp>; you never edit `.mcp.json` by hand.
 
 ### Claude Desktop / claude.ai
 
