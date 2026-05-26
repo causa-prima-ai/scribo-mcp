@@ -9,16 +9,34 @@ Public registry-facing metadata for the Scribo MCP server hosted at
 
 This repo contains:
 
+- [`.claude-plugin/plugin.json`](./.claude-plugin/plugin.json) — Claude Code plugin manifest (one-click install via `/plugin install scribo-mcp`)
 - [`server.json`](./server.json) — [MCP Registry](https://registry.modelcontextprotocol.io/) metadata
 - [`schemas/`](./schemas/) — JSON Schema for each tool's input
 - [`examples/`](./examples/) — sample JSON-RPC 2.0 tool-call payloads
 
 The MCP server implementation itself lives in the Causa Prima
-monorepo at [`client/scribo-mcp/`](https://github.com/CausaPrimaAI/causa-prima/tree/main/client/scribo-mcp).
+monorepo at [`client/scribo-mcp/`](https://github.com/causa-prima-ai/causa-prima/tree/main/client/scribo-mcp).
 End-users never install it locally; they configure their MCP client
 to call the hosted endpoint.
 
-## Install in your MCP client
+## Install
+
+### Claude Code (recommended)
+
+```sh
+/plugin marketplace add causa-prima-ai/scribo-mcp
+/plugin install scribo-mcp@scribo-mcp
+# or, when the name is unambiguous across your installed marketplaces:
+/plugin install scribo-mcp
+```
+
+The repo ships as a single-plugin Claude Code marketplace, so no separate marketplace setup is needed. The plugin wires up the hosted MCP server at `scribo.causaprima.ai/mcp` — no manual `.mcp.json` editing.
+
+### Claude Desktop / claude.ai
+
+Coming soon. We're submitting `scribo-mcp` to Anthropic's hosted plugin registry; once approved, install with one click from the in-app plugin browser. Until then, edit the config manually using the snippets below.
+
+### Manual config (any MCP client)
 
 | Client | Config file | Snippet |
 |---|---|---|
