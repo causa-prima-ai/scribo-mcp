@@ -5,7 +5,7 @@ tools. Drop these into any MCP test harness or replay them with
 `curl` directly against the hosted endpoint:
 
 ```sh
-curl -s https://scribo.causaprima.ai/mcp \
+curl -s https://scribo.causaprima.com/mcp \
   -H "content-type: application/json" \
   -H "accept: application/json, text/event-stream" \
   -d @examples/create_invoice_de_b2b.json

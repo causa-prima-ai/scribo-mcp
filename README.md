@@ -26,7 +26,7 @@ Scribo is a free, conversational e-invoicing tool. Describe an invoice in plain 
 
 Just ask your AI agent about Scribo: it ships as an MCP server, a CLI, and a Claude/Codex skill, alongside a public HTTP API and a web app. Free forever — no credit card. You just need a sender email.
 
-**Built by Causa Prima** — Scribo is built by [**Causa Prima**](https://causaprima.ai/), a company building agentic AI for the CFO office. It's our first freely available skill — an early glimpse of what we're building.
+**Built by Causa Prima** — Scribo is built by [**Causa Prima**](https://causaprima.com/), a company building agentic AI for the CFO office. It's our first freely available skill — an early glimpse of what we're building.
 
 ## What is the Scribo MCP server?
 
@@ -45,7 +45,7 @@ https://github.com/user-attachments/assets/3e1fcca8-580b-448f-bb1c-bee5ee016b54
 Scribo's MCP server is hosted — there's nothing to install. Point your client at:
 
 ```
-https://scribo.causaprima.ai/mcp
+https://scribo.causaprima.com/mcp
 ```
 
 In **Claude Desktop or Claude.ai**: **Customize → Connectors → Add custom connector**, name it `Scribo`, paste the URL, and save. Then just ask:
@@ -58,27 +58,27 @@ Using a different client? See the per-client setup below.
 
 ### Setup & prerequisites
 
-The server speaks MCP over **Streamable HTTP** (JSON-RPC 2.0, MCP spec ≥ 2025-03-26) with **no auth**. Any MCP-aware client connects with one setting — the URL `https://scribo.causaprima.ai/mcp`.
+The server speaks MCP over **Streamable HTTP** (JSON-RPC 2.0, MCP spec ≥ 2025-03-26) with **no auth**. Any MCP-aware client connects with one setting — the URL `https://scribo.causaprima.com/mcp`.
 
 **Claude Desktop / Claude.ai** — Customize → Connectors → Add custom connector → name `Scribo`, paste the URL. On Team/Enterprise plans an org owner may need to add it once under Organization settings → Connectors.
 
 **Cursor** — add to `~/.cursor/mcp.json` (or workspace `.cursor/mcp.json`):
 
 ```json
-{ "mcpServers": { "scribo": { "url": "https://scribo.causaprima.ai/mcp" } } }
+{ "mcpServers": { "scribo": { "url": "https://scribo.causaprima.com/mcp" } } }
 ```
 
 **Cline** — add to `cline_mcp_settings.json`:
 
 ```json
-{ "mcpServers": { "scribo": { "transport": "streamable-http", "url": "https://scribo.causaprima.ai/mcp" } } }
+{ "mcpServers": { "scribo": { "transport": "streamable-http", "url": "https://scribo.causaprima.com/mcp" } } }
 ```
 
 **OpenAI Codex CLI** — add to `~/.codex/config.toml`, then restart Codex:
 
 ```toml
 [mcp_servers.scribo]
-url = "https://scribo.causaprima.ai/mcp"
+url = "https://scribo.causaprima.com/mcp"
 ```
 
 **Any other MCP client** — configure a remote server at the URL above, transport Streamable HTTP, no auth.
@@ -104,7 +104,7 @@ A typical flow: you ask for an invoice → your assistant calls `create_invoice`
 
 The server also registers five workflow **prompts** (`generate_invoice`, `german_b2b_invoice`, `german_b2g_xrechnung`, `us_plain_pdf_invoice`, `redownload_invoice`) — clients that surface prompts show them as slash-command-style starters.
 
-Full tool schemas and sample payloads are in [`schemas/`](./schemas) and [`examples/`](./examples), and in the [MCP docs](https://scribo.causaprima.ai/docs/mcp).
+Full tool schemas and sample payloads are in [`schemas/`](./schemas) and [`examples/`](./examples), and in the [MCP docs](https://scribo.causaprima.com/docs/mcp).
 
 ### Examples
 
@@ -205,23 +205,23 @@ Scribo is built to be operated by an agent. It ships as an **MCP server**, a **C
 <details>
 <summary><strong>Who builds Scribo?</strong></summary>
 
-[Causa Prima](https://causaprima.ai/) — a company building agentic AI for the CFO office. Operated by Causa Prima Germany GmbH, Munich.
+[Causa Prima](https://causaprima.com/) — a company building agentic AI for the CFO office. Operated by Causa Prima Germany GmbH, Munich.
 
 </details>
 
 ## Resources
 
-- **Web app** — [scribo.causaprima.ai](https://scribo.causaprima.ai)
-- **Documentation** — [scribo.causaprima.ai/docs](https://scribo.causaprima.ai/docs)
-- **Compliance & trust** — [scribo.causaprima.ai/compliance](https://scribo.causaprima.ai/compliance)
-- **Causa Prima** — [causaprima.ai](https://causaprima.ai)
+- **Web app** — [scribo.causaprima.com](https://scribo.causaprima.com)
+- **Documentation** — [scribo.causaprima.com/docs](https://scribo.causaprima.com/docs)
+- **Compliance & trust** — [scribo.causaprima.com/compliance](https://scribo.causaprima.com/compliance)
+- **Causa Prima** — [causaprima.com](https://causaprima.com)
 
 **Other Scribo surfaces**
 
-- Skill (Claude / Codex) — [`scribo-skill`](https://github.com/causa-prima-ai/scribo-skill) · [docs](https://scribo.causaprima.ai/docs/skill)
-- MCP server — [`scribo-mcp`](https://github.com/causa-prima-ai/scribo-mcp) · [docs](https://scribo.causaprima.ai/docs/mcp)
-- CLI — [`scribo-cli`](https://github.com/causa-prima-ai/scribo-cli) · [docs](https://scribo.causaprima.ai/docs/cli)
-- HTTP API — [`scribo-api-docs`](https://github.com/causa-prima-ai/scribo-api-docs) · [docs](https://scribo.causaprima.ai/docs/api)
+- Skill (Claude / Codex) — [`scribo-skill`](https://github.com/causa-prima-ai/scribo-skill) · [docs](https://scribo.causaprima.com/docs/skill)
+- MCP server — [`scribo-mcp`](https://github.com/causa-prima-ai/scribo-mcp) · [docs](https://scribo.causaprima.com/docs/mcp)
+- CLI — [`scribo-cli`](https://github.com/causa-prima-ai/scribo-cli) · [docs](https://scribo.causaprima.com/docs/cli)
+- HTTP API — [`scribo-api-docs`](https://github.com/causa-prima-ai/scribo-api-docs) · [docs](https://scribo.causaprima.com/docs/api)
 - Brand hub — [`scribo`](https://github.com/causa-prima-ai/scribo)
 
 ## License
