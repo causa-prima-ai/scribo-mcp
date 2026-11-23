@@ -3,14 +3,14 @@
   "name": "scribo-mcp",
   "owner": {
     "name": "Causa Prima",
-    "url": "https://causaprima.ai"
+    "url": "https://causaprima.com"
   },
   "plugins": [
     {
       "name": "scribo-mcp",
       "source": "./",
-      "description": "EN 16931-compliant e-invoicing (XRechnung, ZUGFeRD, Factur-X, Peppol BIS UBL, Spanish Facturae, plain US PDF) as MCP tools. Wires up the hosted Scribo MCP server at https://scribo.causaprima.ai/mcp.",
-      "version": "1.0.0"
+      "description": "EN 16931-compliant e-invoicing (XRechnung, ZUGFeRD, Factur-X, Peppol BIS UBL, Spanish Facturae, plain US PDF) as MCP tools. Wires up the hosted Scribo MCP server at https://scribo.causaprima.com/mcp.",
+      "version": "1.0.1"
     }
   ]
 }
